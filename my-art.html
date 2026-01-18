@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Polyime Art Gallery - View my complete artworks">
+    <meta name="keywords" content="polyime, art, gallery, artwork, paintings, illustrations">
+    <meta name="author" content="Polyime">
+    <title>My Art - Polyime</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <!-- Link to external CSS stylesheet -->
+    <link rel="stylesheet" href="indexstyles.css">
+    <link rel="stylesheet" href="my-art.css">
+</head>
+<body class="no-select">
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Polyime Logo">
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="my-art.html">My Art</a></li>
+                <li><a href="contact.html">Contact me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="gallery-header">
+            <h1>My Art</h1>
+            <p>A collection of my completed artworks and creative explorations</p>
+        </section>
+
+        <!-- Art Gallery Grid -->
+        <section class="art-gallery">
+            <div class="art-item">
+                <div class="art-image-container">
+                    <img src="images/art1.jpg" alt="Sunset Dreams" class="protected-image">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="art-info">
+                    <h3>Sunset Dreams</h3>
+                    <span class="art-date">January 15, 2026</span>
+                </div>
+            </div>
+
+            <div class="art-item">
+                <div class="art-image-container">
+                    <img src="images/art2.jpg" alt="Ocean Waves" class="protected-image">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="art-info">
+                    <h3>Ocean Waves</h3>
+                    <span class="art-date">January 10, 2026</span>
+                </div>
+            </div>
+
+            <div class="art-item">
+                <div class="art-image-container">
+                    <img src="images/art3.jpg" alt="Mountain Serenity" class="protected-image">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="art-info">
+                    <h3>Mountain Serenity</h3>
+                    <span class="art-date">January 5, 2026</span>
+                </div>
+            </div>
+
+            <div class="art-item">
+                <div class="art-image-container">
+                    <img src="images/art4.jpg" alt="Urban Sketch" class="protected-image">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="art-info">
+                    <h3>Urban Sketch</h3>
+                    <span class="art-date">December 28, 2025</span>
+                </div>
+            </div>
+
+            <div class="art-item">
+                <div class="art-image-container">
+                    <img src="images/art5.jpg" alt="Floral Study" class="protected-image">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="art-info">
+                    <h3>Floral Study</h3>
+                    <span class="art-date">December 20, 2025</span>
+                </div>
+            </div>
+
+            <div class="art-item">
+                <div class="art-image-container">
+                    <img src="images/art6.jpg" alt="Abstract Emotions" class="protected-image">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="art-info">
+                    <h3>Abstract Emotions</h3>
+                    <span class="art-date">December 15, 2025</span>
+                </div>
+            </div>
+
+            <div class="art-item">
+                <div class="art-image-container">
+                    <img src="images/art7.jpg" alt="Portrait Practice" class="protected-image">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="art-info">
+                    <h3>Portrait Practice</h3>
+                    <span class="art-date">December 10, 2025</span>
+                </div>
+            </div>
+
+            <div class="art-item">
+                <div class="art-image-container">
+                    <img src="images/art8.jpg" alt="Nature's Palette" class="protected-image">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="art-info">
+                    <h3>Nature's Palette</h3>
+                    <span class="art-date">December 5, 2025</span>
+                </div>
+            </div>
+
+            <div class="art-item">
+                <div class="art-image-container">
+                    <img src="images/art9.jpg" alt="Cityscape at Night" class="protected-image">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="art-info">
+                    <h3>Cityscape at Night</h3>
+                    <span class="art-date">December 1, 2025</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Protection Notice -->
+        <div class="protection-notice">
+            <p>All artwork is protected. Screenshots and downloads are disabled to protect the artist's work.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Polyime. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Disable right-click
+        document.addEventListener('contextmenu', (e) => {
+            e.preventDefault();
+        });
+
+        // Disable keyboard shortcuts for screenshots and saving
+        document.addEventListener('keydown', (e) => {
+            // Prevent Print Screen
+            if (e.key === 'PrintScreen') {
+                e.preventDefault();
+                alert('Screenshots are disabled to protect the artwork.');
+            }
+            
+            // Prevent Ctrl+S (Save)
+            if (e.ctrlKey && e.key === 's') {
+                e.preventDefault();
+            }
+            
+            // Prevent Ctrl+Shift+S (Save As)
+            if (e.ctrlKey && e.shiftKey && e.key === 'S') {
+                e.preventDefault();
+            }
+            
+            // Prevent Cmd+S on Mac
+            if (e.metaKey && e.key === 's') {
+                e.preventDefault();
+            }
+        });
+
+        // Disable drag and drop of images
+        document.querySelectorAll('.protected-image').forEach(img => {
+            img.addEventListener('dragstart', (e) => {
+                e.preventDefault();
+            });
+        });
+
+        // Add watermark effect on hover (optional additional protection)
+        const artItems = document.querySelectorAll('.art-item');
+        artItems.forEach(item => {
+            item.addEventListener('mouseenter', () => {
+                const overlay = item.querySelector('.image-overlay');
+                overlay.style.opacity = '0.1';
+            });
+            
+            item.addEventListener('mouseleave', () => {
+                const overlay = item.querySelector('.image-overlay');
+                overlay.style.opacity = '0';
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,260 @@
+/* Contact Page Specific Styles */
+
+.contact-section {
+  padding: var(--space-8) var(--space-4);
+  min-height: calc(100vh - 200px);
+}
+
+.contact-container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.contact-container h1 {
+  font-size: var(--text-5xl);
+  font-weight: var(--font-weight-bold);
+  line-height: 1.2;
+  margin-bottom: var(--space-3);
+  background: linear-gradient(135deg, var(--purple) 0%, var(--pink) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-align: left;
+}
+
+.contact-intro {
+  font-size: var(--text-xl);
+  color: var(--text-medium);
+  text-align: left;
+  margin-bottom: var(--space-8);
+  line-height: 1.6;
+}
+
+/* Contact Info Sections */
+.contact-info {
+  margin-bottom: var(--space-8);
+}
+
+.contact-info h2 {
+  font-size: var(--text-2xl);
+  font-weight: var(--font-weight-semibold);
+  color: var(--text-dark);
+  margin-bottom: var(--space-3);
+}
+
+/* Email Link */
+.email-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-4);
+  background-color: var(--white);
+  border: 2px solid var(--purple);
+  border-radius: var(--space-2);
+  text-decoration: none;
+  color: var(--purple);
+  font-size: var(--text-lg);
+  font-weight: var(--font-weight-semibold);
+  transition: all 0.3s ease;
+}
+
+.email-link:hover {
+  background: linear-gradient(135deg, var(--purple) 0%, var(--pink) 100%);
+  color: var(--white);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(151, 71, 255, 0.2);
+}
+
+.email-link svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* Social Links */
+.social-links {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-2);
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-1);
+  padding: var(--space-2) var(--space-2);
+  text-decoration: none;
+  color: var(--white);
+  font-size: var(--text-base);
+  font-weight: var(--font-weight-semibold);
+  border-radius: 100px;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.social-link:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* TikTok button with gradient */
+.social-link:nth-child(1) {
+  background: linear-gradient(135deg, #69C9D0 0%, #EE1D52 100%);
+}
+
+/* YouTube button */
+.social-link:nth-child(2) {
+  background: var(--youtube);
+}
+
+/* Instagram button with gradient */
+.social-link:nth-child(3) {
+  background: linear-gradient(135deg, #833AB4 0%, #FD1D1D 50%, #FCAF45 100%);
+}
+
+/* Facebook button */
+.social-link:nth-child(4) {
+  background: var(--facebook);
+}
+
+.social-link img {
+  width: var(--space-2);
+  height: var(--space-2);
+  filter: brightness(0) invert(1);
+}
+
+/* Newsletter Section */
+.newsletter-section {
+  background-color: var(--white);
+  padding: var(--space-6);
+  border-radius: var(--space-3);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.newsletter-section h2 {
+  font-size: var(--text-3xl);
+  font-weight: var(--font-weight-semibold);
+  color: var(--text-dark);
+  margin-bottom: var(--space-2);
+}
+
+.newsletter-section > p {
+  font-size: var(--text-lg);
+  color: var(--text-medium);
+  margin-bottom: var(--space-4);
+  line-height: 1.6;
+}
+
+/* Newsletter Form */
+.newsletter-form {
+  width: 100%;
+}
+
+.form-group {
+  display: flex;
+  gap: var(--space-2);
+  margin-bottom: var(--space-2);
+}
+
+.form-group input[type="email"] {
+  flex: 1;
+  padding: var(--space-2) var(--space-3);
+  font-size: var(--text-base);
+  font-family: 'Sarabun', sans-serif;
+  border: 2px solid var(--border);
+  border-radius: var(--space-1);
+  background-color: var(--background);
+  color: var(--text-dark);
+  transition: border-color 0.3s ease;
+}
+
+.form-group input[type="email"]:focus {
+  outline: none;
+  border-color: var(--purple);
+}
+
+.form-group input[type="email"]::placeholder {
+  color: var(--text-medium);
+}
+
+.subscribe-btn {
+  padding: var(--space-2) var(--space-5);
+  font-size: var(--text-base);
+  font-weight: var(--font-weight-semibold);
+  font-family: 'Sarabun', sans-serif;
+  color: var(--white);
+  background: linear-gradient(135deg, var(--purple) 0%, var(--pink) 100%);
+  border: none;
+  border-radius: var(--space-1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.subscribe-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(151, 71, 255, 0.3);
+}
+
+.form-note {
+  font-size: var(--text-sm);
+  color: var(--text-medium);
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-section {
+    padding: var(--space-5) var(--space-3);
+  }
+
+  .contact-container h1 {
+    font-size: var(--text-4xl);
+  }
+
+  .contact-intro {
+    font-size: var(--text-lg);
+  }
+
+  .contact-info h2,
+  .newsletter-section h2 {
+    font-size: var(--text-2xl);
+  }
+
+  .email-link {
+    font-size: var(--text-base);
+    padding: var(--space-2) var(--space-3);
+  }
+
+  .social-links {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .social-link {
+    justify-content: center;
+    font-size: var(--text-sm);
+  }
+
+  .newsletter-section {
+    padding: var(--space-4);
+  }
+
+  .form-group {
+    flex-direction: column;
+  }
+
+  .subscribe-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-container h1 {
+    font-size: var(--text-3xl);
+  }
+
+  .email-link {
+    width: 100%;
+    justify-content: center;
+  }
+}

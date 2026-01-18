@@ -1,0 +1,337 @@
+/* Import Sarabun font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700&display=swap');
+
+/* CSS Variables following 8-point system */
+:root {
+  /* 8-point spacing system */
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-5: 40px;
+  --space-6: 48px;
+  --space-7: 56px;
+  --space-8: 64px;
+  --space-9: 72px;
+  --space-10: 80px;
+  
+  /* 8-point typography system */
+  --text-xs: 12px;
+  --text-sm: 14px;
+  --text-base: 16px;
+  --text-lg: 18px;
+  --text-xl: 24px;
+  --text-2xl: 32px;
+  --text-3xl: 40px;
+  --text-4xl: 48px;
+  --text-5xl: 56px;
+  --text-6xl: 64px;
+  
+  /* Colors matching the design */
+  --background: #f5f3f7;
+  --white: #ffffff;
+  --text-dark: #3d3d3d;
+  --text-medium: #6b6b6b;
+  --purple: #9747FF;
+  --pink: #e91e8c;
+  --border: rgba(0, 0, 0, 0.08);
+  
+  /* Social media brand colors */
+  --tiktok-gradient: linear-gradient(135deg, #69C9D0 0%, #EE1D52 50%, #000000 100%);
+  --youtube: #FF0000;
+  --instagram-gradient: linear-gradient(135deg, #833AB4 0%, #FD1D1D 50%, #FCAF45 100%);
+  --facebook: #1877F2;
+  
+  /* Font weights */
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+}
+
+/* Base reset and body styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Sarabun', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: var(--text-base);
+  line-height: 1.6;
+  color: var(--text-dark);
+  background-color: var(--background);
+  font-weight: var(--font-weight-normal);
+}
+
+/* Header and Navigation */
+header {
+  padding: var(--space-2) var(--space-4);
+  background-color: var(--white);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: var(--space-5);
+  width: auto;
+  display: block;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: var(--space-5);
+  align-items: center;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: var(--text-dark);
+  font-size: var(--text-lg);
+  font-weight: var(--font-weight-medium);
+  transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+  color: var(--purple);
+}
+
+/* Main content container */
+main {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 var(--space-4);
+}
+
+/* Hero Section */
+.hero-section {
+  padding: var(--space-10) 0 var(--space-8);
+}
+
+.hero-section h1 {
+  font-size: var(--text-6xl);
+  font-weight: var(--font-weight-bold);
+  line-height: 1.2;
+  margin-bottom: var(--space-4);
+  background: linear-gradient(135deg, var(--purple) 0%, var(--pink) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-section .subheading {
+  font-size: var(--text-2xl);
+  font-weight: var(--font-weight-normal);
+  color: var(--text-dark);
+  max-width: 900px;
+  line-height: 1.5;
+}
+
+/* Connect With Me Section */
+.connect-section {
+  padding: var(--space-8) 0;
+}
+
+.connect-section h2 {
+  font-size: var(--text-4xl);
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--space-5);
+  color: var(--text-dark);
+}
+
+.social-links {
+  display: flex;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-4);
+  text-decoration: none;
+  color: var(--white);
+  font-size: var(--text-lg);
+  font-weight: var(--font-weight-semibold);
+  border-radius: 100px;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.social-link:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+
+}
+h3.connect-section {
+  font-size:rem;
+  padding-top: 0;
+  font-weight: 100;
+}
+
+/* TikTok button with gradient */
+.social-link:nth-child(1) {
+  background: linear-gradient(135deg, #69C9D0 0%, #EE1D52 100%);
+}
+
+/* YouTube button */
+.social-link:nth-child(2) {
+  background: var(--youtube);
+}
+
+/* Instagram button with gradient */
+.social-link:nth-child(3) {
+  background: linear-gradient(135deg, #833AB4 0%, #FD1D1D 50%, #FCAF45 100%);
+}
+
+/* Facebook button */
+.social-link:nth-child(4) {
+  background: var(--facebook);
+}
+/* Email button */
+.social-link:nth-child(5) {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+
+/* Latest Posts Section */
+.latest-posts-section {
+  padding: var(--space-8) 0 var(--space-10);
+}
+
+.latest-posts-section h2 {
+  font-size: var(--text-4xl);
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--space-6);
+  color: var(--text-dark);
+}
+
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-4);
+}
+
+.post-card {
+  width: 40vw;
+  border-radius: var(--space-2);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  background-color: var(--white);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.post-card:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+  transform: translateY(-8px);
+}
+
+.post-card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  display: block;
+}
+
+.post-card h3 {
+  font-size: var(--text-xl);
+  font-weight: var(--font-weight-semibold);
+  margin: var(--space-3) var(--space-3) var(--space-1);
+  line-height: 1.4;
+}
+
+.post-card h3 a {
+  text-decoration: none;
+  color: var(--text-dark);
+  transition: color 0.3s ease;
+}
+
+.post-card h3 a:hover {
+  color: var(--purple);
+}
+
+.post-card p {
+  font-size: var(--text-base);
+  color: var(--text-medium);
+  margin: 0 var(--space-3) var(--space-3);
+  line-height: 1.6;
+}
+
+/* Footer */
+footer {
+  background-color: var(--white);
+  padding: var(--space-5);
+  text-align: center;
+  margin-top: var(--space-8);
+  border-top: 1px solid var(--border);
+}
+
+footer p {
+  font-size: var(--text-base);
+  color: var(--text-medium);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+  
+  .nav-menu {
+    gap: var(--space-3);
+  }
+  
+  .hero-section {
+    padding: var(--space-6) 0 var(--space-5);
+  }
+  
+  .hero-section h1 {
+    font-size: var(--text-4xl);
+  }
+  
+  .hero-section .subheading {
+    font-size: var(--text-lg);
+  }
+  
+  .connect-section h2,
+  .latest-posts-section h2 {
+    font-size: var(--text-3xl);
+  }
+  
+  .posts-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .social-links {
+    flex-direction: column;
+  }
+  
+  .social-link {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section h1 {
+    font-size: var(--text-3xl);
+  }
+  
+  .nav-menu a {
+    font-size: var(--text-base);
+  }
+}
