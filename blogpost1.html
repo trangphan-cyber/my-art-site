@@ -1,362 +1,118 @@
-/* Blog Post Specific Styles */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog post title - Polyime">
+    <meta name="keywords" content="polyime, art, craft, sewing, tutorials">
+    <meta name="author" content="Polyime">
+    <title>Blog Post Title - Polyime</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    
+    <!-- Link to external CSS stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="blogpost1.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="Logo_PolyIme.svg" alt="Polyime Logo">
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Trang Chủ</a></li>
+                <li><a href="index.html#connect">Liên Hệ</a></li>
+            </ul>
+        </nav>
+    </header>
 
-/* Header/Navigation for Blog Post */
-header {
-  background: white;
-  border-bottom: 1px solid #e5e5e5;
-}
+    <main>
+        <article class="blog-post">
+            <!-- Back Button -->
+            <a href="index.html#blog" class="back-link">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.5 15L7.5 10L12.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Back to all posts
+            </a>
 
-.navbar {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 1rem 1.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+            <!-- Post Header -->
+            <header class="post-header">
+                <span class="post-category">Art Journey</span>
+                <h1 class="post-title">Lời tự sự của một người học vẽ tay ngang: Cái giá của việc mất căn bản.</h1>
+                <div class="post-meta">
+                    <span class="post-date">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z" stroke="currentColor" stroke-width="1.5"/>
+                            <path d="M8 4V8L10.5 10.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                        January 18, 2026
+                    </span>
+                    <span class="post-read-time">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="1.5"/>
+                            <path d="M8 5V8L10 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                        5 min read
+                    </span>
+                </div>
+            </header>
 
-.logo a {
-  display: block;
-}
+            <!-- Featured Image -->
+            <div class="post-featured-image">
+                <img src="post-featured-image.jpg" alt="Paint palettes with brushes">
+            </div>
 
-.logo img {
-  height: 3rem;
-}
+            <!-- Post Content -->
+            <div class="post-content">
+                <p>Là một người chỉ coi vẽ vời là sở thích, tôi cũng chưa từng được học qua trường lớp chính thức nào. Trước đây tôi theo học ngành kinh tế, đến lúc đi làm công việc cũng không hề dính dáng đến nghệ thuật hay hội họa. Có thể nói, vẽ đối với tôi giống như "bạch nguyệt quang" – ánh trăng sáng luôn đẹp đẽ nhưng lại xa tầm với. Mãi đến sau này, khi công việc đã ổn định và có thời gian cho bản thân, tôi mới có cơ hội đầu tư cho đam mê mà tôi vốn luôn nghĩ là rất tốn kém này. Thực ra, mọi chuyện bắt đầu khi tôi mua lại chiếc iPad của anh trai, trên đó có những ứng dụng vẽ vô cùng thú vị.</p>
 
-.nav-menu {
-  display: flex;
-  gap: 2rem;
-  list-style: none;
-}
+                <h2>Khởi đầu</h2>
+                <p>Chính vì khởi đầu từ các ứng dụng kỹ thuật số nên tôi đã vô tình bỏ qua việc học các kỹ thuật căn bản như: cầm bút đúng cách, vẽ bằng cả cánh tay, hay luyện nét dọc, nét ngang và góc nghiêng chuẩn. Một phần vì tôi nghĩ khi vẽ trên các app như Procreate, việc đi nét quá đơn giản, lại có sẵn đủ loại công cụ, brush (cọ), có thể tạo layer và tha hồ tẩy xóa, dễ dàng trace hình... Tôi đã lầm tưởng mình có thể "nhảy cóc" và bỏ qua hẳn phần nền móng.</p>
+                <p>Đó chính là sai lầm lớn nhất. Sau một năm luyện vẽ ròng rã, tôi thấy mình vẫn không hề tiến bộ. Mỗi buổi vẽ kéo dài 2-3 tiếng từ đi nét đến lên màu khiến tôi cạn kiệt sức lực, nhưng nhìn lại thành quả, mọi thứ trông cứ "gồng" và thiếu cảm xúc. Nếu ai đó hỏi tôi có hiểu cấu trúc bức tranh mình vừa vẽ không, hay có thể tái hiện lại nó không, câu trả lời chắc chắn là "không".</p>
 
-.nav-menu a {
-  color: #4a5568;
-  text-decoration: none;
-  transition: color 0.3s;
-  font-weight: 500;
-}
+                <blockquote>
+                    "Every artist was first an amateur. The key is to keep creating, keep learning, and never give up."
+                </blockquote>
 
-.nav-menu a:hover {
-  color: #4a1f4f;
-}
+                <h2>Sai Lầm Thứ Hai</h2>
+                <p>Sai lầm thứ hai của tôi là "nghiện" tích trữ tài liệu. Tôi lưu về một đống giáo trình, hàng chục playlist tutorial, nhưng đến lúc muốn luyện tập thì lại không biết phải bắt đầu từ đâu. Tôi rơi vào "nghịch lý của sự lựa chọn" – đó là khi có quá nhiều thứ để chọn, ta thường bị đóng băng và không chọn được gì cả.</p>
+                <p>Cách phân bổ thời gian luyện tập cũng là một vấn đề. Tôi nhận ra dành hàng giờ đồng hồ để sao chép y hệt một bức ảnh không phải là cách "study" (nghiên cứu) đúng đắn. Với tôi hiện tại, nghiên cứu đúng cách là phải hiểu được cấu trúc của mẫu vật để có thể biến tấu nó theo ý mình. Việc này cần diễn ra nhanh và đơn giản: tập đơn giản hóa hình khối, tập quan sát và phác họa nhanh trước khi đi vào chi tiết. Quan trọng là phải nghiên cứu từng thứ một: cấu trúc, đường nét, ánh sáng rồi mới đến màu sắc... thay vì ôm đồm tất cả cùng lúc.</p>
+                <!-- <ul>
+                    <li>Practice consistently, even if it's just for 15 minutes a day</li>
+                    <li>Don't be afraid to make mistakes - they're your best teachers</li>
+                    <li>Share your work and connect with other artists</li>
+                </ul> -->
 
-/* Main Content */
-main {
-  background: linear-gradient(to bottom right, #f3e8ff, #fce7f3, #eff6ff);
-  min-height: 100vh;
-  padding: 2rem 0;
-}
+                <h2>Hậu quả</h2>
+                <p>Hậu quả của việc mất căn bản rõ rệt nhất là khi tôi nhận được yêu cầu vẽ commission, tôi đã không thể nào vẽ theo ý khách hàng nếu nó là một yêu cầu đòi hỏi sự sáng tạo hay tưởng tượng cao. Đồng thời, khi nảy ra một ý tưởng nào đó, tôi cũng hoàn toàn bế tắc vì không biết phải diễn tả nó ra như thế nào. Cảm giác bất lực ấy khiến tôi mất tự tin đến nỗi, tôi đã không thể động vào bút vẽ trong suốt 3 năm trời…</p>
+                <h2>Một khởi đầu mới</h2>
+            <p>Nhưng sau khoảng lặng đó, tôi hiểu rằng không có lối đi tắt nào cho nghệ thuật. Sự hào nhoáng của những bức vẽ hoàn thiện trên mạng đã từng làm tôi nóng lòng, nhưng giờ đây, tôi chọn cách đi chậm lại.</p>
+            <p>Tôi quyết định dành thời gian để "xây lại" nền móng cho chính mình, bắt đầu từ những nét vẽ căn bản nhất. Đây không chỉ là việc học lại kỹ thuật, mà là cách tôi học cách kiên nhẫn với bản thân và thực sự thấu hiểu những gì mình đang vẽ.</p>
+            <p>Tôi muốn chia sẻ hành trình này với mọi người, với tư cách là một "người tay ngang" đang nỗ lực mỗi ngày. Hy vọng rằng, những trải nghiệm và cả những lỗi sai mà tôi đã vấp phải sẽ giúp ích được phần nào cho những ai cũng đang có niềm đam mê không giải thích nổi với hội họa trong lòng như tôi.</p>
 
-/* Blog Post Article */
-.blog-post {
-  max-width: 60vw;
-  margin: 0 auto;
-  padding: 0 1.5rem;
-}
+            </div>
+            
 
-/* Back Link */
-.back-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  color: #4a5568;
-  text-decoration: none;
-  margin-bottom: 2rem;
-  transition: all 0.3s;
-  font-size: 0.875rem;
-}
 
-.back-link:hover {
-  color: #4a1f4f;
-  transform: translateX(-4px);
-}
+            <!-- Post Footer -->
+            <footer class="post-footer">
+                <p class="share-text">Chia sẻ bài:</p>
+                <div class="share-buttons">
+                    <a href="#" class="share-btn tiktok">Tiktok</a>
+                    <a href="#" class="share-btn facebook">Facebook</a>
+                    <a href="#" class="share-btn instagram">Instagram</a>
+                </div>
+            </footer>
+        </article>
+    </main>
 
-.back-link svg {
-  transition: transform 0.3s;
-}
-
-.back-link:hover svg {
-  transform: translateX(-2px);
-}
-
-/* Post Header */
-.post-header {
-  padding: 3rem;
-}
-
-.post-category {
-  display: inline-block;
-  background: linear-gradient(to right, #a855f7, #ec4899);
-  color: white;
-  padding: 0.25rem 1rem;
-  border-radius: 9999px;
-  font-size: 0.875rem;
-  font-weight: 500;
-  margin-bottom: 1rem;
-}
-
-.post-title {
-  font-family: Georgia, serif;
-  font-size: clamp(1.875rem, 4vw, 3rem);
-  color: #1a1a1a;
-  margin-bottom: 1.5rem;
-  line-height: 1.3;
-}
-
-.post-meta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  color: #6b7280;
-  font-size: 0.875rem;
-}
-
-.post-date,
-.post-read-time {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-/* Featured Image */
-.post-featured-image {
-  aspect-ratio: 16/9;
-  overflow: hidden;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-}
-
-.post-featured-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-/* Content Illustrations */
-.content-illustration {
-  margin: 3rem 0;
-  border-radius: 0.75rem;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-}
-
-.content-illustration img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.content-illustration.small {
-  max-width: 500px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.content-illustration.medium {
-  max-width: 650px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.illustration-caption {
-  text-align: center;
-  font-size: 0.875rem;
-  color: #6b7280;
-  font-style: italic;
-  margin-top: 0.75rem;
-}
-
-/* Post Content */
-.post-content {
-  background: white;
-  padding: 3rem;
-
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-  line-height: 1.8;
-  margin-bottom: 2rem;
-}
-
-.post-content p {
-  margin-bottom: 1.5rem;
-  color: #374151;
-  font-size: 1.0625rem;
-}
-
-.post-content h2 {
-  font-family: Georgia, serif;
-  font-size: 1.875rem;
-  color: #4a1f4f;
-  margin-top: 3rem;
-  margin-bottom: 1.5rem;
-  line-height: 1.3;
-}
-
-.post-content h2:first-child {
-  margin-top: 0;
-}
-
-.post-content h3 {
-  font-family: Georgia, serif;
-  font-size: 1.5rem;
-  color: #4a1f4f;
-  margin-top: 2.5rem;
-  margin-bottom: 1rem;
-  line-height: 1.4;
-}
-
-.post-content blockquote {
-  background: linear-gradient(to right, #f3e8ff, #fce7f3);
-  border-left: 4px solid #a855f7;
-  padding: 1.5rem;
-  border-radius: 0 0.5rem 0.5rem 0;
-  margin: 2rem 0;
-  font-style: italic;
-  color: #1f2937;
-}
-
-.post-content ul {
-  margin: 1.5rem 0;
-  padding-left: 0;
-  list-style: none;
-}
-
-.post-content ul li {
-  margin-bottom: 0.75rem;
-  padding-left: 2rem;
-  position: relative;
-  color: #374151;
-}
-
-.post-content ul li::before {
-  content: "•";
-  position: absolute;
-  left: 0.75rem;
-  color: #a855f7;
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
-
-/* Post Footer */
-.post-footer {
-  background: white;
-  padding: 2rem 3rem;
-  border-radius: 1rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-}
-
-.share-text {
-  color: #6b7280;
-  margin-bottom: 2rem;
-  font-size: 1rem;
-  text-align: center
-}
-
-.share-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-  justify-content: center;
-}
-
-.share-btn {
-  padding: 0.5rem 1.5rem;
-  border-radius: 9999px;
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 0.875rem;
-  transition: transform 0.3s;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.share-btn:hover {
-  transform: scale(1.05);
-}
-
-.share-btn.tiktok {
-  background: linear-gradient(to bottom right, #22d3ee, #ec4899);
-}
-
-.share-btn.facebook {
-  background: linear-gradient(to bottom right, #3b82f6, #1d4ed8);
-}
-
-.share-btn.instagram {
-  background: linear-gradient(to bottom right, #a855f7, #ec4899, #fb923c);
-}
-
-/* Footer */
-footer {
-  background: #4a1f4f;
-  color: white;
-  padding: 2rem 0;
-  text-align: center;
-  margin-top: 4rem;
-}
-
-footer p {
-  color: rgba(255, 255, 255, 0.8);
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .navbar {
-      padding: 1rem;
-  }
-
-  .nav-menu {
-      gap: 1rem;
-  }
-
-  .logo img {
-      height: 2.5rem;
-  }
-
-  .post-content {
-      padding: 2rem 1.5rem;
-  }
-
-  .post-footer {
-      padding: 1.5rem;
-  }
-
-  .post-content h2 {
-      font-size: 1.5rem;
-      margin-top: 2rem;
-  }
-
-  .post-content h3 {
-      font-size: 1.25rem;
-      margin-top: 1.5rem;
-  }
-
-  .post-content p {
-      font-size: 1rem;
-  }
-
-  .share-buttons {
-      flex-direction: column;
-  }
-
-  .share-btn {
-      text-align: center;
-  }
-}
-
-@media (max-width: 480px) {
-  .post-meta {
-      flex-direction: column;
-      gap: 0.75rem;
-  }
-
-  .post-content {
-      padding: 1.5rem 1rem;
-  }
-
-  .post-content ul li {
-      padding-left: 1.5rem;
-  }
-
-  .post-content ul li::before {
-      left: 0.5rem;
-  }
-}
+    <footer>
+        <p>&copy; 2026 polyime.com</p>
+    </footer>
+</body>
+</html>
